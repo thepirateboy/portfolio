@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.jkumbotron {
+  padding-top: 6rem;
+  background-color: #e2edff;
+}
+
+#projects {
+  background-color: #e2edff;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  padding-top: 5rem;
+}
+
+.rounded-circle {
+  width: 200px;
+  height: 200px;
+}
+
+#about {
+  margin-top: -2rem;
+}
+
+#projects-container {
+  margin-bottom: 6rem;
+}
