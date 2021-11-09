@@ -20,7 +20,7 @@ code {
 #projects {
   background-color: #e2edff;
   margin-top: -1rem;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 section {
@@ -38,4 +38,10 @@ section {
 
 #projects-container {
   margin-bottom: 6rem;
+}
+
+#white {
+  background-color: white;
+  margin-top: -1rem;
+  margin-bottom: -5rem;
 }
