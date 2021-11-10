@@ -2,16 +2,9 @@ import * as Items from "./Items";
 import werk from "./img/werk.png";
 import chat from "./img/chat.png";
 import imbd from "./img/imbd.png";
+import zeroweather from "./img/zeroweather.png";
 
-function CardData(
-  title,
-  picture,
-  description,
-  type,
-  api,
-  database,
-  link
-) {
+function CardData(title, picture, description, type, api, database, link) {
   this.title = title;
   this.picture = picture;
   this.description = description;
@@ -50,6 +43,15 @@ theCards = [
     "Firebase Cloud Firestore",
     "https://github.com/thepirateboy/group_chat_app"
   ),
+  new CardData(
+    "Zero Weather",
+    zeroweather,
+    "A simple weather app.",
+    "Flutter",
+    "OpenWeatherMap API",
+    "none",
+    "https://github.com/thepirateboy/zeroweather"
+  ),
   // new CardData("Title", "pict", "description", "type", "api", "database"),
 ];
 
@@ -57,15 +59,7 @@ export var cardList = [];
 
 for (var i of theCards) {
   cardList.push(
-    Card(
-      i.title,
-      i.picture,
-      i.description,
-      i.type,
-      i.api,
-      i.database,
-      i.link
-    )
+    Card(i.title, i.picture, i.description, i.type, i.api, i.database, i.link)
   );
 }
 
@@ -84,6 +78,7 @@ function Card(title, picture, description, type, api, database, link) {
     <div class="col-md-4 mb-3">
       <div class="card">
         <img src={picture} class="card-img-top" alt="..." />
+
         <div class="card-body">
           <h3 class="card-text">{title}</h3>
           <p>{description}</p>
@@ -94,7 +89,7 @@ function Card(title, picture, description, type, api, database, link) {
             <li class="list-group-item">Database: {database}</li>
             <li class="list-group-item"></li>
             <a href={link} class="btn btn-primary">
-              Take me there!
+              See the code
             </a>
           </ul>
         </div>
