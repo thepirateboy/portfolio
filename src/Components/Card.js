@@ -20,7 +20,7 @@ theCards = [
     "Werk",
     werk,
     "This app is going to be office/company productivity app, that will has bunches of functionalities including department chat, department report form, etc.",
-    "Flutter",
+    "Android & iOS App",
     "Firebase API",
     "Firebase Cloud Firestore",
     "https://github.com/thepirateboy/werk"
@@ -29,7 +29,7 @@ theCards = [
     "IMBD",
     imbd,
     "A simplified version of Internet Movie Database (IMDb)",
-    "Flutter",
+    "Android & iOS App",
     "OMDb API",
     "None",
     "https://github.com/thepirateboy/imbd_app"
@@ -38,7 +38,7 @@ theCards = [
     "Group Chat App",
     chat,
     "A simple group chatting with register and login system.",
-    "Flutter",
+    "Android & iOS App",
     "Firebase API",
     "Firebase Cloud Firestore",
     "https://github.com/thepirateboy/group_chat_app"
@@ -47,7 +47,7 @@ theCards = [
     "Zero Weather",
     zeroweather,
     "A simple weather app.",
-    "Flutter",
+    "Android & iOS App",
     "OpenWeatherMap API",
     "none",
     "https://github.com/thepirateboy/zeroweather"
