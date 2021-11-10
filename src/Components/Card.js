@@ -34,7 +34,7 @@ theCards = [
     "Web",
     "OMDB API",
     "IMDb",
-    "https://github.com/thepirateboy/zeroweather",
+    "https://yopi-movie.yaeyx.com",
     "See Demo"
   ),
   new CardData(
