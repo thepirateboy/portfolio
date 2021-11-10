@@ -3,8 +3,18 @@ import werk from "./img/werk.png";
 import chat from "./img/chat.png";
 import imbd from "./img/imbd.png";
 import zeroweather from "./img/zeroweather.png";
+import yopimovie from "./img/yopimovie.png";
 
-function CardData(title, picture, description, type, api, database, link) {
+function CardData(
+  title,
+  picture,
+  description,
+  type,
+  api,
+  database,
+  link,
+  theButton
+) {
   this.title = title;
   this.picture = picture;
   this.description = description;
@@ -12,10 +22,21 @@ function CardData(title, picture, description, type, api, database, link) {
   this.api = api;
   this.database = database;
   this.link = link;
+  this.theButton = theButton;
 }
 
 export var theCards = [];
 theCards = [
+  new CardData(
+    "Yopi Movie",
+    yopimovie,
+    "A simple Movie Database Web.",
+    "Web",
+    "OMDB API",
+    "IMDb",
+    "https://github.com/thepirateboy/zeroweather",
+    "See Demo"
+  ),
   new CardData(
     "Werk",
     werk,
@@ -23,7 +44,8 @@ theCards = [
     "Android & iOS App",
     "Firebase API",
     "Firebase Cloud Firestore",
-    "https://github.com/thepirateboy/werk"
+    "https://github.com/thepirateboy/werk",
+    "See code"
   ),
   new CardData(
     "IMBD",
@@ -32,7 +54,8 @@ theCards = [
     "Android & iOS App",
     "OMDb API",
     "None",
-    "https://github.com/thepirateboy/imbd_app"
+    "https://github.com/thepirateboy/imbd_app",
+    "See code"
   ),
   new CardData(
     "Group Chat App",
@@ -41,7 +64,8 @@ theCards = [
     "Android & iOS App",
     "Firebase API",
     "Firebase Cloud Firestore",
-    "https://github.com/thepirateboy/group_chat_app"
+    "https://github.com/thepirateboy/group_chat_app",
+    "See code"
   ),
   new CardData(
     "Zero Weather",
@@ -50,8 +74,10 @@ theCards = [
     "Android & iOS App",
     "OpenWeatherMap API",
     "none",
-    "https://github.com/thepirateboy/zeroweather"
+    "https://github.com/thepirateboy/zeroweather",
+    "See code"
   ),
+
   // new CardData("Title", "pict", "description", "type", "api", "database"),
 ];
 
@@ -59,11 +85,29 @@ export var cardList = [];
 
 for (var i of theCards) {
   cardList.push(
-    Card(i.title, i.picture, i.description, i.type, i.api, i.database, i.link)
+    Card(
+      i.title,
+      i.picture,
+      i.description,
+      i.type,
+      i.api,
+      i.database,
+      i.link,
+      i.theButton
+    )
   );
 }
 
-function Card(title, picture, description, type, api, database, link) {
+function Card(
+  title,
+  picture,
+  description,
+  type,
+  api,
+  database,
+  link,
+  theButton
+) {
   if (type === undefined) {
     type = "None";
   }
@@ -89,7 +133,7 @@ function Card(title, picture, description, type, api, database, link) {
             <li class="list-group-item">Database: {database}</li>
             <li class="list-group-item"></li>
             <a href={link} class="btn btn-primary">
-              See the code
+              {theButton}
             </a>
           </ul>
         </div>
